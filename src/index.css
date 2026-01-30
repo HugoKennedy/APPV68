@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* KPMG Corporate Design System */
+    --background: 0 0% 100%;
+    --foreground: 218 100% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 218 100% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 100% 15%;
+
+    /* KPMG Blue Primary */
+    --primary: 218 100% 28%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Deep blue for hero sections */
+    --primary-dark: 218 100% 20%;
+    
+    /* Cyan accent for CTAs and highlights */
+    --accent: 187 85% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Light blue for secondary elements */
+    --secondary: 210 100% 97%;
+    --secondary-foreground: 218 100% 28%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 218 100% 28%;
+
+    /* Success green for positive metrics */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning yellow */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Premium gradient */
+    --gradient-primary: linear-gradient(135deg, hsl(218 100% 28%), hsl(218 100% 20%));
+    --gradient-accent: linear-gradient(135deg, hsl(187 85% 50%), hsl(218 100% 28%));
+    
+    /* Subtle background gradient */
+    --gradient-bg: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 100% 99%));
+
+    /* Shadows */
+    --shadow-card: 0 2px 8px hsla(218, 100%, 28%, 0.08);
+    --shadow-elevated: 0 8px 24px hsla(218, 100%, 28%, 0.12);
+    --shadow-hover: 0 12px 32px hsla(218, 100%, 28%, 0.16);
+
+    /* Transitions */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
